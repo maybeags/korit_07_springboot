@@ -87,8 +87,5 @@ public class CardatabaseApplication implements CommandLineRunner {
 			logger.info("brand : {}, model : {}", car.getBrand(), car.getModel());
 		}
 
-		System.out.println(repository.findByBrand("Kia"));
-		System.out.println(repository.findByColor("White"));
-		System.out.println(repository.findByModelYear(2024));
 	}
 }

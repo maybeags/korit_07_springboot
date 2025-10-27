@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class ShoppingItem {
 
     @Id
@@ -27,8 +28,7 @@ public class ShoppingItem {
 
     // CommandLineRunner 상에서 사용할 간단한 생성자 정의 하겠습니다.
 
-    public ShoppingItem(Long id, String product, String amount, boolean purchased, User user) {
-        this.id = id;
+    public ShoppingItem(String product, String amount, boolean purchased, User user) {
         this.product = product;
         this.amount = amount;
         this.purchased = purchased;

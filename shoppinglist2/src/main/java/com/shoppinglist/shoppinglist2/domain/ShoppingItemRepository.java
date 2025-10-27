@@ -6,7 +6,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import java.util.List;
 import java.util.Optional;
 
-@RepositoryRestResource(exported = false)
+//@RepositoryRestResource(exported = false)
 public interface ShoppingItemRepository extends JpaRepository<ShoppingItem, Long> {
     // 사용자 정의 컨트롤러에서 사용
     List<ShoppingItem> findByUser(User user);
